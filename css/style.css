@@ -1,0 +1,203 @@
+header{
+  font-family: 'Roboto', sans-serif;
+}
+
+.head{
+  text-transform: uppercase;
+  display: -webkit-inline-box;
+}
+
+/* Nav*/
+a:hover{
+  text-decoration: none;
+  color: grey;
+}
+.head > a > li {
+  text-decoration: none !important;
+}
+
+a {
+  position: relative;
+  color: black;
+  margin: 0;
+  padding: 5px;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+ul{
+  list-style-type: none;
+  font-size: 17px;
+  margin-top: 50px;
+  margin-right: 197px;
+  font-weight: lighter;
+}
+/* End Nav*/
+
+/* Header img*/
+.jumbotron{
+  background-image:url("..img/1.jpeg");
+  height: auto;
+  width: 100%;
+  margin:50px 0 0 0;
+  padding-bottom: 0;
+  background: transparent;
+}
+.jumbotron h3{
+  font-weight: lighter;
+  padding: 20px 2px 0px 197px;
+}
+.jumbotron p{
+  padding-left: 15px;
+  color: grey;
+}
+.image{
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 640px;
+}
+/* End Header img*/
+
+
+/* Footer*/
+hr {
+  width: 70%;
+}
+footer{
+font-family: 'Roboto', sans-serif;
+font-size: 10px;
+}
+h5{
+  margin-left: 195px;
+  font-weight: lighter;
+}
+/* About*/
+.row-about{
+  padding-top: 10%;
+}
+.row-about {
+  margin-bottom: 15%;
+}
+/* End About*/
+
+/* Works */
+.col-xs-2{
+  padding: 20px;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  height: 188px;
+  margin-top: 10px;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: .7em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  text-decoration: underline;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+/* End Works*/
+/* Contact */
+.conatact-form{
+  padding-bottom: 2%;
+  padding-top: 6%;
+}
+
+/* End Conact*/
